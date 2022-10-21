@@ -3,9 +3,10 @@ import telebot
 import time
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from hashlib import blake2b
+from decouple import config
 from db import insert, user_search, in_process, process_search, delete_process
 
-bot = telebot.TeleBot(os.environ['Token'])
+bot = telebot.TeleBot(config('Token'))
 
 def extract_unique_code(text):
 	print(text)
