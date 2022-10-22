@@ -103,9 +103,9 @@ def messages(msg):
  '''
 
 	answer = InlineKeyboardButton("پاسخ دادن", callback_data=msg.chat.id)
-	ban = InlineKeyboardButton("مسدود کردن", callback_data="receiver")
+# 	ban = InlineKeyboardButton("مسدود کردن", callback_data="receiver")
 
-	markup.add(ban, answer)
+	markup.add(answer)
 
 	bot.send_message(msg.chat.id, 'پیام شما ارسال شد.')
 	bot.send_message(receiver, text, reply_markup=markup)
