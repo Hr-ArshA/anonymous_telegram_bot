@@ -1,3 +1,3 @@
-# anonymous_telegram_bot
+# anonymous telegram bot
 
 [لینک بات](https://t.me/thisanonymousbot)
