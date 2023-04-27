@@ -8,6 +8,7 @@ from db import insert, user_search, in_process, process_search, delete_process
 
 bot = telebot.TeleBot(config('Token'))
 
+message_bool = False
 
 def extract_unique_code(text):
     print(text)
